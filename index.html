@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Looper & Wolly's Letter Quest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <div class="character-stage" aria-hidden="true">
+        <img class="character looper entrance" src="looper.png" alt="" />
+        <img class="character wolly entrance" src="wolly.png" alt="" />
+      </div>
+      <div class="confetti-layer" id="confetti" aria-hidden="true"></div>
+      <section class="game" aria-labelledby="game-title">
+        <header>
+          <div class="logo"><span>★</span> LETTER QUEST</div>
+          <div class="badges">
+            <div class="streak" id="streakBadge" hidden><span>🔥</span><strong id="streakCount">0</strong></div>
+            <div class="score" aria-label="Stars earned"><span>★</span><strong id="stars">0</strong></div>
+          </div>
+        </header>
+        <div class="progress-wrap" aria-label="Question progress"><div id="progress"></div></div>
+        <p class="round" id="round">ROUND 1 OF 10</p>
+
+        <article class="card" id="card">
+          <p class="prompt" id="prompt">Looper found an apple!</p>
+          <div class="picture" id="picture" aria-hidden="true">🍎</div>
+          <h1 id="game-title">Which letter does <span id="word">APPLE</span> start with?</h1>
+          <div class="choices" id="choices" aria-label="Letter choices"></div>
+          <p class="coach" id="coach" aria-live="polite">Tap a letter to help Looper!</p>
+        </article>
+        <button class="next" id="next" hidden>Next adventure <span>→</span></button>
+        <button class="sound" id="sound" aria-label="Hear the word">🔊 Hear it</button>
+      </section>
+      <div class="finale" id="finale" hidden>
+        <div class="finale-card">
+          <p class="finale-trophy">🏆</p>
+          <h2>Quest Complete!</h2>
+          <p id="finaleStars"></p>
+          <button id="playAgain">Play again <span>↻</span></button>
+        </div>
+      </div>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>
