@@ -60,5 +60,5 @@ h1 { margin:4px 0 16px; font:800 1.65rem/1.14 "Baloo 2", sans-serif; letter-spac
 .finale-card p#finaleStars { font-weight:900; color:#ca9a1f; font-size:1.2rem; margin:0 0 18px; }
 #playAgain { border:0; border-radius:17px; cursor:pointer; padding:12px 26px; color:#fff; background:#f56b85; box-shadow:0 5px 0 #bf405b; font:900 1.1rem Nunito,sans-serif; }
 #playAgain:active { transform:translateY(4px); box-shadow:0 1px 0 #bf405b; }
-@media(max-width:760px) { .character { opacity:.2; height:43vh; bottom:-20px; }.looper{left:-18vw}.wolly{right:-24vw} }
-@media(max-width:500px) { .game-shell{padding:10px}.game{padding:12px;border-radius:26px}.card{min-height:455px;padding:18px 12px}.picture{width:115px;height:115px;font-size:4.6rem}.choice{min-height:76px;font-size:2.3rem}h1{font-size:1.45rem}.character{opacity:.13} }
+@media(max-width:760px) { .character { height:30vh; bottom:0; }.looper{left:-4vw}.wolly{right:-8vw;height:32vh} }
+@media(max-width:500px) { .game-shell{padding:10px}.game{padding:12px;border-radius:26px}.card{min-height:455px;padding:18px 12px}.picture{width:115px;height:115px;font-size:4.6rem}.choice{min-height:76px;font-size:2.3rem}h1{font-size:1.45rem}.character{height:24vh}.looper{left:-2vw}.wolly{right:-4vw;height:25vh} }
