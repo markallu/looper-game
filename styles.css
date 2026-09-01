@@ -21,7 +21,7 @@ body::before { height:340px; width:340px; top:9%; left:-155px; } body::after { h
 @keyframes celebrateSmall { 30% { transform:translateY(-16px) rotate(-5deg) scale(1.04); } 60% { transform:translateY(-4px) rotate(4deg) scale(1.02); } 100% { transform:translateY(0) rotate(0) scale(1); } }
 .character.wince { animation:wince .5s ease both; }
 @keyframes wince { 20%,60% { transform:translateX(-10px) rotate(-4deg); } 40%,80% { transform:translateX(10px) rotate(4deg); } 100% { transform:translateX(0) rotate(0); } }
-.game { z-index:1; width:min(650px, 100%); position:relative; padding:18px; background:rgba(255,255,255,.16); border:2px solid rgba(255,255,255,.34); border-radius:34px; box-shadow:0 18px 52px rgba(2,29,83,.32); backdrop-filter:blur(5px); }
+.game { z-index:1; width:min(540px, 92%); position:relative; padding:16px; background:rgba(255,255,255,.16); border:2px solid rgba(255,255,255,.34); border-radius:30px; box-shadow:0 18px 52px rgba(2,29,83,.32); backdrop-filter:blur(5px); }
 header { display:flex; justify-content:space-between; align-items:center; padding:0 7px 14px; color:#fff; }
 .logo { font-family:"Baloo 2",sans-serif; font-size:1.3rem; font-weight:800; letter-spacing:.5px; text-shadow:0 2px 0 rgba(0,0,0,.12); }.logo span { color:var(--yellow); }
 .badges { display:flex; align-items:center; gap:8px; }
